@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.main {
+    width: 100%;
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    gap: 20px;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    transition: 0.4s ease;
+}
+ul li a:hover {
+    color: red;
+}
+.info {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+.info h1 {
+    font-size: 65px;
+    color: rgb(36, 32, 30);
+}
+.info span {
+    color: rgb(230, 104, 59);
+}
+.image {
+    width: 30%;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+.image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+.image:hover img {
+    transform: translateX(-10px);
+}
+.icons {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    display: flex;
+    gap: 10px;
+}
+.icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Sections Styling */
+section {
+    padding: 50px;
+    text-align: center;
+}
+#about, #skills, #work, #contact {
+    background: #f5f5f5;
+    margin-top: 20px;
+    padding: 50px;
+}
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+#skills li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Work Section */
+.work-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.work-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.work-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    height: 100px;
+}
+button {
+    padding: 10px 20px;
+    background: rgb(36, 32, 30);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(59, 174, 209);
+}
